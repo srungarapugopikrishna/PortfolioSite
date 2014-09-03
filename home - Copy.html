@@ -2,11 +2,6 @@
 <head>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <script type="text/javascript">
-function setmargintop(){
-	var ht = document.getElementById("nav").offsetHeight;
-	document.getElementById("page1").style.marginTop =ht; 
-}
- 
 $(document).ready(function(){
                 $(".contactLink").click(function(){
                     if ($("#contactForm").is(":hidden")){
@@ -57,84 +52,44 @@ $(document).ready(function() {
 * Copyright (c) 2012 Karl Swedberg; Licensed MIT, GPL */
 </script>
 <style type="text/css">
-		body{
-			margin:0px;
-		}
-		.header-cont {
-			width:100%;
-			height:10%;
-			position:fixed;
-			top:0px;
-			background:#222;
-			z-index:+1;
-		}
-		#wrap-footer { 
-			height: 300px;
-			width: 100%;
-			bottom: 0;
-			background:#1e1e1e;
-		 }
-		.poems{
-			width: 500px;
-			height: 300px;
-			position: relative;
-			top: 30%;
-			left: 50%;
-			margin-top: -200px;
-			margin-left: -200px;
-			background-color: #ffffff;
-			border: 1px solid black;
-			opacity:0.6;
-			filter:alpha(opacity=60); 
-		}
-	.scroll-btn {
-	width: 55px;
-	height: 55px;
-	background: rgba(0,0,0,0.5);
-	border-radius: 50%;
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 50px;
-	margin: 0 auto;
-	display: table;
-	z-index: 100001;
+body{
+margin:0px;
 }
-</style>
-<style>
-.Go-Down-Button{
-			top: 100px;
-			right: 100px;
-	}
+.header-cont {
+width:100%;
+height:10%;
+position:fixed;
+top:0px;
+}
+#wrap-footer { 
+   height: 100px;
+   position: fixed;
+   width: 100%;
+   bottom: 0;
+    background:red;
+ }
+
 </style>
 </head>
-<body onload="setmargintop()">
-	<div class="header-cont" id="nav">
+	<div class="header-cont" id="nav"  style="background-color:#323130;">
       <a href="#about" style="color: #CC0000">About</a> 
       <a href="#portfolio" style="color: #CC0000">Portfolio</a> 
       <a href="#contact" style="color: #CC0000">Contact</a> 
   </div>
-<div id="page1" style="background-color:rgb(224, 94, 47);height:800px;" >
-<a id="about"></a>
-	<h3 style="position: absolute;top: 50%;left: 50%;margin-right: -50%;transform: translate(-50%, -50%);">BIRTH offers the Eligibility of Growth,<br>
-	LIFE offers a fullfilled Experience,<br>
-	DEATH offers the permanent state of Rest,<br>
-Before taking "REST", have a good "EXPERIENCE" during your "GROWTH".<br></h3>
-	<!--	 <a href="#portfolio">
-		  <img id="Go-Down-Button" src="images/dark-arrow.svg" style="margin-top:400px;margin-left:650px"> 
-		 </a> -->
+<div id="page1" style="background-color:#0000FF;height:700px;">
+  <a id="about"></a>
+    About page content goes here.
 </div>
 
-<div id="page2" style="background-color:#e18728;height:850px;">
+<div id="page2" style="height:700px;">
   <a id="portfolio"></a>
-    Portfolio page content goes here.	 
+    Portfolio page content goes here.
 </div>
 
-<div id="page3" style="background-color:#CC9999;height:850px;">
+<div id="page3" style="background-color:#CC9999;height:700px;">
   <a id="contact"></a>
     Contact page content goes here.
 </div>
 <div id="wrap-footer">
 </div>
-</body>
 </html>
